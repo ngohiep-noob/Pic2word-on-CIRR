@@ -17,15 +17,17 @@ Experiments are conducted on the train, val, and test sets of the [CIRR](https:/
 4. Change the value of `INDEX_PATH` in `app/params.py` to the path of the downloaded index file.
 
 5. Install the dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    _Some dependencies may not be installed correctly. Please install them manually if needed._
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   _Some dependencies may not be installed correctly. Please install them manually if needed._
 
 6. Run the Streamlit app:
-    ```bash
-    streamlit run streamlit.py
-    ```
+   ```bash
+   streamlit run streamlit.py
+   ```
 
 ## Experiment Results
 
@@ -36,3 +38,7 @@ Experiments are conducted on the train, val, and test sets of the [CIRR](https:/
 |    Test    |   0.14   |   0.47   |   0.62    |    \_     |   0.86    |
 
 _Results on the test set are evaluated by submitting retrieved answers to the [evaluation server](https://cirr.cecs.anu.edu.au/)._
+
+## Demo
+
+Click [here](https://drive.google.com/file/d/1fi1I035gnc4u0f-gqu2lAC-anLod5Uba/view?usp=drive_link) to watch demo video.
