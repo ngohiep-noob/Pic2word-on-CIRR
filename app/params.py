@@ -1,4 +1,4 @@
 INDEX_PATH = (
-    r"C:\Users\Hoang\Code\IR project\New project\data\indexes\cirr_val.faiss.index"
+    r"C:\Users\Hoang\Code\IR project\New project\data\indexes\cirr_train.faiss.index"
 )
-COLLECTION = "val"
+COLLECTION = "train"
