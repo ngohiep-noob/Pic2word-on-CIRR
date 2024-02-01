@@ -17,11 +17,10 @@ Experiments are conducted on train, val and test set of the [CIRR](https://githu
 4. Change value of `INDEX_PATH` in `app/params.py` to the path of downloaded index file.
 
 5. Install the dependencies:
-
    ```bash
    pip install -r requirements.txt
    ```
-
+   _Some dependencies may not be installed correctly, please install them manually if needed._
 6. Run streamlit app:
 
    ```bash
