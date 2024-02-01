@@ -2,7 +2,7 @@ from src.model.clip import load
 from src.utils import convert_models_to_fp32
 import torch
 from src.model.model import IM2TEXT
-from app.params import INDEX_PATH, COLLECTION
+from app.params import INDEX_PATH, COLLECTION, CKPT_PATH
 from app.utils import process_prompt, normalize
 import faiss
 
@@ -12,9 +12,8 @@ clip_model, preprocess_train, preprocess_val = load(name="ViT-L/14", jit=False)
 
 convert_models_to_fp32(clip_model)
 
-ckpt_path = "checkpoints\pic2word_model.pt"
 
-checkpoint = torch.load(ckpt_path)
+checkpoint = torch.load(CKPT_PATH)
 
 clip_model = clip_model.cuda()
 
@@ -65,5 +64,3 @@ def retrieve(ref_img, caption, top_k=5):
 
 def imgs_from_indices(indices):
     return [collection[i] for i in indices]
-
-
